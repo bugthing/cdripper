@@ -6,6 +6,8 @@ the cd tray and expect you to add another audio cd to repeat the process.
 
 ## Docker
 
+Available at dockerhub here: https://hub.docker.com/repository/docker/bugthing/cdripper/
+
 ### Build
 
 To build the container, nothing special, just this:
