@@ -14,9 +14,12 @@ To build the container, nothing special, just this:
 
 ### Run
 
-I would expect the best way to run this is in an terminal so you can monitor the output, do so like so:
+I would expect the best way to run this is in an terminal so you can monitor the output, do so like this:
 
     $ docker run -it --rm --privileged -v `pwd`/rips:/output --device=/dev/sr0:/dev/sr0 cdripper
 
-NOTE: I neede --privileged so that the cd would eject
+NOTE: I needed --privileged so that the cd would eject
+You will see above I have mounted a volume (-v) and attached a device (--device).
+The volume mounted at /output is where the CD audio (mp3 files) will be written to.
+The device mounted at /dev/sr0 is the scsi cd device from my linux machine.
 
